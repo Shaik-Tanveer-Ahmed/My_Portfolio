@@ -1,0 +1,14 @@
+body {
+    padding-top: 70px; 
+}
+
+.intro-section {
+    background-image: url(../images/img1.jpg); 
+    background-size: cover; 
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+}
+p{
+    text-align: justify;
+}

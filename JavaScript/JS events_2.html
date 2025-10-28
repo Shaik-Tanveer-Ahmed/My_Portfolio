@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <style>
+        body
+        {
+            text-align: center;
+            padding-top: 40px;
+        }
+        button
+        {
+            color: black;
+            padding: 10px 20px;
+            font-weight: bolder;
+            border-radius: 5px;
+            border: none;
+        }
+        a{
+            text-decoration: none;
+            border: 2px solid gray;
+            font-size: 20px;
+            padding: 10px 22px;
+            color: black;
+            position: absolute;
+            margin-top: 350px;
+        }
+    </style>
+</head>
+<body onload="myfun()">
+    <h2 id="heading">JavaScript Events:</h2>
+    <button onclick="myfun()">Change Background</button>
+    <script>
+        function myfun()
+        {
+            var r = Math.floor(Math.random()*255);
+            var g = Math.floor(Math.random()*255);
+            var b = Math.floor(Math.random()*255);
+            console.log(r,g,b)
+            var bgcolor = 'rgb('+r+","+g+","+b+')';
+            document.body.style.background=bgcolor;
+        }
+    </script>
+    <br>
+<a href="../INDEX_JS.html">BACK</a>
+</body>
+</html>

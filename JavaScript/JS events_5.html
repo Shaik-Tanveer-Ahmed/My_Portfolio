@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <style>
+        body
+        {
+            text-align: center;
+            background: lightcyan;
+        }
+        button
+        {
+            padding: 12px 22px;
+            background: white;
+        }
+        h1
+        {
+            border-bottom: 2px solid gray;
+        }
+        a{
+            text-decoration: none;
+            border: 2px solid gray;
+            font-size: 20px;
+            padding: 10px 22px;
+            color: black;
+            position: absolute;
+            margin-top: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Events:</h1>
+    <h2>JavaScript is a versatile programming language primarily used for creating interactive and dynamic content on websites. It enables developers to implement complex features like animations, form validation, and real-time updates without needing to refresh the page. With its widespread use in both front-end and back-end development, JavaScript is essential for modern web development.</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReqFvtJet7PWzy19zyleJXB5hDd_ihpkRvNQ&s"><br><br>
+    <button id="btn">CLICK ME</button>
+    <script>
+        document.getElementById("btn").addEventListener("click", myfun);
+        function myfun()
+        {
+          alert("Hello Developer!")
+        }
+    </script>
+    <br>
+    <a href="../INDEX_JS.html">BACK</a>
+</body>
+</html>

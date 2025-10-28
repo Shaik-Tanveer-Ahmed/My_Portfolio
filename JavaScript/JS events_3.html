@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <style>
+        body
+        {
+            text-align: center;
+            padding-top: 15px;
+        }
+        button
+        {
+            padding: 8px 15px;
+            background: white;
+            border-radius: 5px;
+        }
+        a{
+            text-decoration: none;
+            border: 2px solid gray;
+            font-size: 20px;
+            padding: 10px 22px;
+            color: black;
+            position: absolute;
+            margin-top: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JAVASCRIPT:</h1>
+    <h2>A scripting language to make interactive web pages </h2>
+    <img id="bimg" src="off.jpg" width="150px" height="150px"><br>
+    <button id="btn" onclick="toggleImage()">ONN</button>
+    <script>
+        function toggleImage()
+        {
+            var x = document.getElementById("bimg");
+               if (x.src.match('off.jpg'))
+               {
+                x.src = "on.jpg";
+                document.getElementById("btn").innerHTML="OFF";
+               }
+               else
+               {
+                x.src="off.jpg";
+                document.getElementById("btn").innerHTML="ONN";
+               }
+
+        }
+    </script>
+    <br>
+    <a href="../INDEX_JS.html">BACK</a>
+</body>
+</html>
